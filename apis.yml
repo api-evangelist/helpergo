@@ -1,7 +1,24 @@
 aid: helpergo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/helpergo.png
 name: HelperGo
-description: HelperGo is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: HelperGo is a Hong Kong-based on-demand home services marketplace that connects households
+  with more than 5,000 vetted local helpers for domestic cleaning, air-conditioning and window cleaning,
+  cooking, childcare and babysitting, postnatal doula and confinement care, elderly and nursing care,
+  and medical escort services. Customers book through the HelperGo iOS and Android apps or the website,
+  with instant helper matching, ratings and reviews, and a satisfaction guarantee. HelperGo is a
+  portfolio company of 500 Global and operates across Hong Kong and Singapore. The company is a
+  consumer-facing service marketplace and publishes no public developer API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/helpergo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Home Services
+- Marketplace
+- On-Demand
+- Consumer
+- Hong Kong
+- Cleaning
+- Childcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/helpergo-domain-security.yml
 - type: Website
   url: https://helpergo.co
+- type: Blog
+  url: https://helpergo.co/blogs
+- type: Support
+  url: https://helpergo.co/contact-us
+- type: PrivacyPolicy
+  url: https://helpergo.co/privacy
+- type: TermsOfService
+  url: https://helpergo.co/terms-of-use
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

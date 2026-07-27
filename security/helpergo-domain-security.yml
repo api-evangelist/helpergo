@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: helpergo.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 11 07:42:25 2026 GMT
+  hsts: false
+domains:
+- domain: helpergo.co
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
